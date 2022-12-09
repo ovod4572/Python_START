@@ -32,3 +32,4 @@ elif x < 0 and y < 0:
     print(f'x = {x} и y = {y} -> 3 ')
 elif x > 0 and y < 0:
     print(f'x = {x} и y = {y} -> 4 ')
+    

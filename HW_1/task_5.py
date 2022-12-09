@@ -18,4 +18,4 @@ by = int(input('Enter point coordinate B along the Y axis: '))
 
 import math
 distans = round(math.sqrt((ax-bx)**2+(ay-by)**2), 2)
-print(f'A({ax},{ay}); B({bx},{by}) -> {distans}' )
+print(f'A({ax},{ay}); B({bx},{by}) -> {distans}')

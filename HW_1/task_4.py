@@ -22,3 +22,4 @@ elif a == 4:
     print('quarter = 4 => x∈(0, ∞) и y∈(0, -∞)')
 else:
     print('Input Error')
+    

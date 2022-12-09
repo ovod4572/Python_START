@@ -9,3 +9,4 @@ for x in True,False:
         for z in True,False:
             result.append(not (x or y or z) == (not x and not y and not z))
 print(all(result))
+
