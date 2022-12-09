@@ -15,3 +15,11 @@ True
 1
 False
 """
+number = int(input("Enter the number of the day of the week from 1 to 7: "))
+
+if number < 1 or number > 7:
+    print('Input Error')
+elif number > 5:
+    print('True')
+else:
+    print('False')
