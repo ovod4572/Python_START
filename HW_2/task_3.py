@@ -18,14 +18,15 @@
 """
 n = int(input("Enter the number N: "))
 if n > 0:
-    i = 0
-    x = 0
-    list = []
-    while i <= n - 1:
-        i = i + 1
-        b = (1 + (1 / i)) ** i
-        list.append(b)
-        x = x + b
+    x = sum([(1 +1 / i) ** i for i in range(1, n + 1)])
+    # i = 0
+    # x = 0
+    # list = []
+    # while i <= n - 1:
+    #     i = i + 1
+    #     b = (1 + (1 / i)) ** i
+    #     list.append(b)
+    #     x = x + b
     print(round(x, 2))
 else:
     print ('Input Error')
