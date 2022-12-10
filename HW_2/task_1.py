@@ -20,5 +20,6 @@ def summa(x):
         if i is not '.':  # !=
             sum = sum + int(i)
     return sum
-print ( f'{number} -> {summa(number)}')  
-    
+print ( f'{number} -> {summa(number)}') 
+
+ 
