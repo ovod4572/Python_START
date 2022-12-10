@@ -18,7 +18,7 @@
 """
 n = int(input("Enter the number N: "))
 if n > 0:
-    x = sum([(1 +1 / i) ** i for i in range(1, n + 1)])
+    x = sum([(1 + 1 / i) ** i for i in range(1, n + 1)])
     # i = 0
     # x = 0
     # list = []
@@ -29,6 +29,4 @@ if n > 0:
     #     x = x + b
     print(round(x, 2))
 else:
-    print ('Input Error')
-
-
+    print('Input Error')
