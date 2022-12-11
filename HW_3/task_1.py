@@ -13,7 +13,7 @@
 """
 from random import randint
 
-len_array = int(input("Введите количество чисел в списке: "))
+len_array = int(input("Enter the number: "))
 numbers = []
 sum_elements = 0
 
@@ -23,3 +23,6 @@ for val in numbers[1::2]:
     sum_elements += sum_elements
 
 print(f'{numbers} -> {sum_elements}')
+
+
+
