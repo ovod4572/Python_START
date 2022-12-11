@@ -24,3 +24,4 @@ for i in range(len_array):
 float_numbers.sort()
 dif_numbers = float_numbers[-1] - float_numbers[0]
 print(round(dif_numbers, sign))
+

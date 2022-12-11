@@ -32,3 +32,4 @@ print(numbers)
 
 # print(new_numbers)
 print([numbers[i]*numbers[-i-1] for i in range((len(numbers) + 1)//2)])
+
