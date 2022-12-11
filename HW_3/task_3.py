@@ -11,8 +11,8 @@
 """
 from random import uniform
 
-len_array = int(input("Введите количество чисел в списке: "))
-sign = int(input("Введите количество знаков после запятой: "))
+len_array = int(input("Enter the number of numbers in the list: "))
+sign = int(input("Enter the number of decimal places: "))
 float_numbers = []
 
 for i in range(len_array):
@@ -23,4 +23,4 @@ for i in range(len_array):
     float_numbers[i] = float_numbers[i] - int(float_numbers[i])
 float_numbers.sort()
 dif_numbers = float_numbers[-1] - float_numbers[0]
-print(f' => {round(dif_numbers, sign)}')
+print(round(dif_numbers, sign))
