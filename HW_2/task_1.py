@@ -12,14 +12,12 @@
 11
 """
 number = float(input('Enter the number: '))  
+sum = []
+x = abs(number)
+sum = 0
 
-def summa(x):
-    x = abs(x)
-    sum = 0
-
-    for i in str(x):
-        if i != '.': 
-            sum += int(i)
-    return sum
-
-print(summa(number)) 
+for i in str(x):
+    if i != '.': 
+        sum += int(i)
+    
+print(sum) 
