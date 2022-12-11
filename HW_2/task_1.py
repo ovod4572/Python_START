@@ -20,4 +20,5 @@ for i in str(x):
     if i != '.': 
         sum += int(i)
     
-print(sum) 
+print(sum)
+
