@@ -11,17 +11,15 @@
 0.56
 11
 """
-number = float(input('Enter the number: '))  # float !!!
-
+number = float(input('Enter the number: '))  
 
 def summa(x):
     x = abs(x)
     sum = 0
 
     for i in str(x):
-        if i is not '.':  # !=
-            sum = sum + int(i)
+        if i != '.': 
+            sum += int(i)
     return sum
 
-
-print(summa(number))  # int !!!
+print(summa(number)) 

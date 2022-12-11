@@ -8,12 +8,12 @@
 4
 [1, 2, 6, 24]
 """
+
 number = int(input("Enter the number: "))
-i = 1
 num = 1
 x = []
-while i <= number:
-    num = num * i
-    i = i + 1
+for i in range(1, number + 1):
+    num *= i
+    i += 1
     x.append(num)
 print(x)
