@@ -22,13 +22,14 @@
 x = int(input('Enter the number X: '))
 y = int(input('Enter the number Y: '))
 
-if x == 0 or y == 0:
+if x == 0 and y == 0:
     print('Input Error')
-elif x > 0 and y > 0:
+elif x > 0 < y:
     print(f' x = {x} и y = {y} -> 1 ')
-elif x < 0 and y > 0:
+elif x < 0 < y:
     print(f'x = {x} и y = {y} -> 2 ')
-elif x < 0 and y < 0:
+elif x < 0 > y:
     print(f'x = {x} и y = {y} -> 3 ')
-elif x > 0 and y < 0:
+elif x > 0 > y:
     print(f'x = {x} и y = {y} -> 4 ')
+    
