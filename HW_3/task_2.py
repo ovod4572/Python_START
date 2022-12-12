@@ -22,7 +22,6 @@ numbers = []
 for i in range(len_array):
     numbers.append(randint(1, 10))
 print(numbers)   
-
 # if len_array % 2 == 0:
 #     for i in range(int(len_array / 2)):
 #         new_numbers.append(numbers[i] * numbers[-i - 1])
