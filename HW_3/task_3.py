@@ -16,12 +16,12 @@ sign = int(input("Enter the number of decimal places: "))
 float_numbers = []
 
 for i in range(len_array):
-    float_numbers.append(round(uniform(1, 10), sign))   
+    float_numbers.append(round(uniform(1, 10), sign))
 print(float_numbers)
 
 for i in range(len_array):
-    float_numbers[i] = float_numbers[i] - int(float_numbers[i])
+    float_numbers[i] = float_numbers[i] % 1
+
 float_numbers.sort()
 dif_numbers = float_numbers[-1] - float_numbers[0]
 print(round(dif_numbers, sign))
-
