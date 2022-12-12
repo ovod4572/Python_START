@@ -19,8 +19,7 @@ sum_elements = 0
 
 for i in range(len_array):
     numbers.append(randint(1, 10))
-for val in numbers[1::2]:
-    sum_elements += sum_elements
+    sum_elements = sum(numbers[1::2])
 
 print(f'{numbers} -> {sum_elements}')
 
