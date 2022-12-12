@@ -31,5 +31,6 @@ print(numbers)
 #         new_numbers.append(numbers[i] * numbers[-i - 1])
 
 # print(new_numbers)
-print([numbers[i]*numbers[-i-1] for i in range((len(numbers) + 1)//2)])
+print([numbers[i] * numbers[-i - 1] for i in range((len_array + 1) // 2)])
+
 
