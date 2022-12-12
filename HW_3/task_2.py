@@ -17,19 +17,9 @@ from random import randint
 
 len_array = int(input("Enter the number: "))
 numbers = []
-#new_numbers = []
-
 for i in range(len_array):
     numbers.append(randint(1, 10))
 print(numbers)   
-# if len_array % 2 == 0:
-#     for i in range(int(len_array / 2)):
-#         new_numbers.append(numbers[i] * numbers[-i - 1])
-# else:
-#     for i in range(int(len_array / 2 + 1)):
-#         new_numbers.append(numbers[i] * numbers[-i - 1])
-
-# print(new_numbers)
 print([numbers[i] * numbers[-i - 1] for i in range((len_array + 1) // 2)])
 
 
