@@ -18,11 +18,8 @@ number = int(input("Enter the number: "))
 def binary(number):
     if number == 0:
         return 0
-    
-    remains = binary(number // 2)
-    number = number % 2 + 10 * remains
-#    print(number)
-    return number
-    
+       
+    return number % 2 + 10 * binary(number // 2)
 print(binary(number))
+
 
