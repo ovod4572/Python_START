@@ -12,15 +12,15 @@ https://ru.wikipedia.org/wiki/Негафибоначчи
 """
 
 
-def fib(n):
-    if n < 0:
-        return (-1) ** (-n + 1) * fib(-n)
+# def fib(n):
+#     if n < 0:
+#         return (-1) ** (-n + 1) * fib(-n)
 
-    if n in (1, 2):
-        return 1
-    return fib(n - 1) + fib(n - 2)
+#     if n in (1, 2):
+#         return 1
+#     return fib(n - 1) + fib(n - 2)
 
-
+fib = lambda n: 1 if n in (1, 2) else (-1) ** (-n + 1) * fib(-n) if n < 0 else fib(n - 1) + fib(n - 2)
 N = int(input("Enter the number N: "))
 neg_fib = []
 
