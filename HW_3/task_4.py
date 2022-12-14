@@ -14,12 +14,15 @@
 2
 10
 """
-number = int(input("Enter the number: "))
+
 def binary(number):
-    if number == 0:
-        return 0
-       
+    if number == 1:
+        return 1
+
+#    return f'{binary(number // 2)}{number % 2}'       
     return number % 2 + 10 * binary(number // 2)
+
+number = int(input("Enter the number: "))
 print(binary(number))
 
 
