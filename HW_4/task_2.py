@@ -9,9 +9,10 @@
 [2, 4, 6, 8]
 """
 
-# lst = list(map(int, input("Enter numbers separated by spaces: ").split()))
 lst = [1, 1, 2, 3, 3, 4, 5, 5, 6, 7, 7, 8, 9, 9]
+#lst = list(map(int, input("Enter numbers separated by spaces:\n").split()))
 
 new_lst = [i for i in lst if lst.count(i) == 1]
+
 print(lst)
 print(new_lst)
