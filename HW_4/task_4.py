@@ -13,10 +13,10 @@
 """
 
 
-def coeff(k):
-    if 'x' in k:
-        i = k.find('x')
-        num = int(k[:i])
+def coeff(n):
+    if 'x' in n:
+        i = n.find('x')
+        num = int(n[:i])
     return num
 
 
@@ -35,14 +35,14 @@ def decomp(str):
     str = str[0].replace(' ', '').split('=')
     str = str[0].split('+')
     lst = []
-    l = len(str)
+    length = len(str)
     k = 0
     if degree(str[-1]) == -1:
         lst.append(int(str[-1]))
-        l -= 1
+        length -= 1
         k = 1
     i = 1
-    index = l-1
+    index = length-1
     while index >= 0:
         if degree(str[index]) != -1 and degree(str[index]) == i:
             lst.append(coeff(str[index]))
@@ -55,18 +55,18 @@ def decomp(str):
 
 
 def lst_new(lst1, lst2):
-    ll = min(len(lst1), len(lst2))
-    mm = max(len(lst1), len(lst2))
+    len_min = min(len(lst1), len(lst2))
+    len_max = max(len(lst1), len(lst2))
     if len(lst1) > len(lst2):
-        ll = len(lst2)
-    lst_new = [lst1[i] + lst2[i] for i in range(ll)]
+        len_min = len(lst2)
+    lst_new = [lst1[i] + lst2[i] for i in range(len_min)]
     if len(lst1) > len(lst2):
-        mm = len(lst1)
-        for i in range(ll, mm):
+        len_max = len(lst1)
+        for i in range(len_min, len_max):
             lst_new.append(lst1[i])
     else:
-        mm = len(lst2)
-        for i in range(ll, mm):
+        len_max = len(lst2)
+        for i in range(len_min, len_max):
             lst_new.append(lst2[i])
     return lst_new
 
