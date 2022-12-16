@@ -37,6 +37,6 @@ for ratio in ratios:
     power -= 1
 polinom = ' + '.join(polinom) + ' = 0'
 print(polinom)
-with open('task_4.txt', 'a+',) as data:
-    data.write(f'{polinom}\n')
+#with open('HW_4/polinom_sum.txt', 'a+',) as data:
+#    data.write(f'{polinom}\n')
     
