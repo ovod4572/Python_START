@@ -24,19 +24,19 @@ ratios = [randint(0, 100) for i in range(k + 1)]
 if ratios[0] == 0:
     ratios[0] = randint(1, 100)
 power = len(ratios) - 1
-polinom = []
+polynom = []
 
 for ratio in ratios:
     if ratio:
         if power == 0:
-            polinom. append(f'{ratio}')
+            polynom. append(f'{ratio}')
         elif power == 1:
-            polinom.append(f'{ratio if ratio != 1 else ""}x')
+            polynom.append(f'{ratio if ratio != 1 else ""}x')
         else:
-            polinom.append(f'{ratio if ratio != 1 else ""}x^{power}')
+            polynom.append(f'{ratio if ratio != 1 else ""}x^{power}')
     power -= 1
-polinom = ' + '.join(polinom) + ' = 0'
-print(polinom)
-#with open('HW_4/polinom_sum.txt', 'a+',) as data:
-#    data.write(f'{polinom}\n')
+polynom = ' + '.join(polynom) + ' = 0'
+print(polynom)
+#with open('HW_4/polynom_3.txt', 'w',) as data:
+#    data.write(polynom)
     
