@@ -13,8 +13,16 @@
 
 from random import randint
 
+#коэффициент многочлена высшего порядка (ratios) не может быть равен нулю. 
+# Если сумма коэффициентов равна нулю, то нет многочлена, нет задачи. 
+# к=2 -> x**2 обязан присутствовать. к=8 -> x**8. k=25 -> x**24. Это как 2х2=5.
+# Поэтому условие 0 = 0, как и К = 0, невозможны по определению. 
+# (При К = 5 "многочлен" 0 равен 0 !!! Где многочлен?). Спасибо.
+
 k = int(input('Введите натуральную степень k: '))
-ratios = [randint(0, 100) for i in range(k)] + [randint(1, 100)]
+ratios = [randint(0, 100) for i in range(k + 1)]
+if ratios[0] == 0:
+    ratios[0] = randint(1, 100)
 power = len(ratios) - 1
 polinom = []
 
@@ -29,6 +37,6 @@ for ratio in ratios:
     power -= 1
 polinom = ' + '.join(polinom) + ' = 0'
 print(polinom)
-with open('task_4.txt', 'w') as data:
-    data.write(polinom)
+with open('task_4.txt', 'a+',) as data:
+    data.write(f'{polinom}\n')
     
