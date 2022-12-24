@@ -10,27 +10,27 @@
 ыыыыыррррр   аааааагггггггг
 5ы5р3 6а8г
 """
-#enc = input()
-enc = 'ыыыыыррррр   аааааагггггггг'
+#arg = input()
+arg = 'ыыыыыррррр   аааааагггггггг'
 conut = 1
-for i in range(len(enc)):
-    if i == (len(enc) - 1):
-        print(str(conut) + enc[i], end='')
+for i in range(len(arg)):
+    if i == (len(arg) - 1):
+        print(str(conut) + arg[i], end='')
     else:
-        if enc[i] == enc[i + 1]:
+        if arg[i] == arg[i + 1]:
             conut = conut + 1
         else:
-            print(str(conut) + enc[i], end='')
+            print(str(conut) + arg[i], end='')
             conut = 1
 print()
 
-#dec = input()
-dec = '5ы5р3 6а8г'
-for i in range(len(dec)):
-    if dec[i].isdigit():
-        for j in range(int(dec[i]) - 1):
-            print(dec[i + 1], end='')
+#expect = input()
+expect = '5ы5р3 6а8г'
+for i in range(len(expect)):
+    if expect[i].isdigit():
+        for j in range(int(expect[i]) - 1):
+            print(expect[i + 1], end='')
     else:
-        print(dec[i], end='')
+        print(expect[i], end='')
 print()
 
