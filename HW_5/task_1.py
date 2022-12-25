@@ -14,6 +14,7 @@ def new_text(arg):
     arg = list(filter(lambda x: "а" and "б" and "в" not in x, arg.split()))
     return " ".join(arg)
 
+
 result = new_text(arg)
 print(result)
 
@@ -29,6 +30,5 @@ print(result)
 #     if not ("а" in i and "б" in i and "в" in i):
 #         new_text.append(i)
 
-# result = ' '.join(new_text) 
+# result = ' '.join(new_text)
 # print(result)
-
