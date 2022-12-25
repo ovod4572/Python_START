@@ -13,3 +13,14 @@
 [1, 3, 5]
 [1, 2, 5, 3, 10]
 """
+lst = [1, 2, 3, 5, 1, 5, 3, 10]
+#lst = list(map(int, input("Enter numbers separated by spaces:\n").split()))
+print(lst)
+
+new_lst_а = [i for i in set(lst) if lst.count(i) == 1]
+new_lst_б = [i for i in set(lst) if lst.count(i) > 1]
+new_lst_в = [i for i in set(lst) if lst.count(i)]
+
+print(new_lst_а)
+print(new_lst_б)
+print(new_lst_в)
