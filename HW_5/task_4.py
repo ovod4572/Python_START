@@ -18,7 +18,7 @@ for i in range(len(arg)):
         print(str(count) + arg[i], end='')
     else:
         if arg[i] == arg[i + 1] and count < 9:
-            count = count + 1
+            count += count
         else:
             print(str(count) + arg[i], end='')
             count = 1
