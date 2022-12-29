@@ -24,3 +24,5 @@ new_lst_3 = [i for i in set(lst) if lst.count(i)]
 print(new_lst_1)
 print(new_lst_2)
 print(new_lst_3)
+
+
