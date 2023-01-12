@@ -1,0 +1,55 @@
+{
+  "last_id": {
+    "id": 5
+  },
+  "items": [
+    {
+      "id": "id",
+      "first_name": "Имя",
+      "last_name": "Фамилия",
+      "birthday": "дд.мм.гггг",
+      "workplace": "Место работы",
+      "phone_number": " № телефона"
+    },
+    {
+      "id": 1,
+      "first_name": "Иван",
+      "last_name": "Иванов",
+      "birthday": "02.03.1983",
+      "workplace": "безработный",
+      "phone_number": "+71785126925"
+    },
+    {
+      "first_name": "Олег",
+      "last_name": "Петров",
+      "phone_number": "+71798545614",
+      "birthday": "12.05.1995",
+      "workplace": "безработный",
+      "id": 2
+    },
+    {
+      "first_name": "Анна",
+      "last_name": "Репка",
+      "phone_number": "+74563421678",
+      "birthday": "23.11.1998",
+      "workplace": "безработная",
+      "id": 3
+    },
+    {
+      "first_name": "Петр",
+      "last_name": "Иванов",
+      "phone_number": "+79153452277",
+      "birthday": "22.03.1996",
+      "workplace": "безработный",
+      "id": 4
+    },
+    {
+      "first_name": "Егор",
+      "last_name": "Жданов",
+      "phone_number": "+79851385632",
+      "birthday": "22.11.2000",
+      "workplace": "безработный",
+      "id": 5
+    }
+  ]
+}
